@@ -1,10 +1,3 @@
-function sayHi() {
-    alert("Hello");
-}
-
-// window.sayHi();
-
-
 let form = document.querySelector('.subscription');
 let email = document.querySelector('.subscription-email');
 
