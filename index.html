@@ -154,12 +154,20 @@
             <a href="https://www.youtube.com/channel/UC9buQ3siM6ebgh_tEwWaGAg" class="yt">
             </a>
             <div>
-                <p>
-                    Подпишись на наши обновления!
-                </p>
-                <input type="text" placeholder="Ваш email">
+                <form action="index.html" method="post" class="subscription">
+                    <div>
+                        <label class="subscription-label" for="subscription-email">Подпишись на наши обновления!</label>
+                    </div>
+                    <div>
+                        <input type="email" class="subscription-email" placeholder="Ваш email вот сюда" id="subscription-email">
+                        <button class="subscription-button" type="submit">Подписаться</button>
+                    </div>
+
+                </form>
+                
             </div>
         </div>
         <p class="podpis">Сайт разработал Логинов А. М.</p>
     </footer>
+    <script src="script.js"></script>
 </body></html>
