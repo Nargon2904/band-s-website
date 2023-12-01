@@ -353,58 +353,99 @@ h1 {
 }
 .shop{
     margin-left: 150px;
+    padding: 0 5%;
 }
 .shopping-cart {
     display: inline-block;
-    width: 80%;
-    padding: 10px 50px 10px 100px;
+    justify-content: space-around;
+    width: 90%;
     margin-bottom: 150px;
 }
-.product-image { margin-left: 20px; float: left; width: 27%; }
-.product-details { float: left; width: 24%; }
-.product-price { float: left; width: 17%; }
-.product-quantity { float: left; width: 12%; }
-.product-removal { float: left; width: 9%; }
-.product-line-price { float: left; width: 12%; text-align: right; }
-.productsss {
+.column-labels {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(130,130,130,.15);
+    padding: 1% 0 1% 3%;
 }
+.name-product-image { }
+.name-product-details { }
+.name-product-price { }
+.name-product-quantity { }
+.name-product-size { }
+
 .product {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     border-bottom: 1px solid rgba(130,130,130,.15);
-    padding: 5px;
+    padding: 2%;
 }
-.sale {
+.product-image {
     width: 200px;
     border-radius: 15px;
     height: 200px;
 }
-.proddisc {
+.product-details {
     text-align:center;
-    width: 500px;
+    width: 200px;
     height: 40px;
-    margin: 15px 0 15px 10px;
+    margin: 15px 0;
     font-size: 20px;
 }
-.prodprice {
+.product-price {
     text-align:center;
     width: 200px;
     margin: 15px 0;
     font-size: 20px;
 }
-.quant {
-    width: 40px;
-    margin-left: 150px;
+.product-quantity {
+    width: 200px;
 }
+
+.quantity {
+    display: block;
+    padding-top: 20px;
+}
+.quantity h3{
+    display: inline;
+    margin: 0 30px;
+}
+.quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 32px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #000;
+    font-weight: 300;
+}
+.plus-btn, .minus-btn {
+    width: 30px;
+    height: 30px;
+    color: #292b2e;
+    background-color: #929292;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+button p {
+    font-size: 22px;
+    font-weight: 300;
+    color: #2e2e2e;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+
+
+
 .checkbox {
     display: flex;
     flex-direction: column;
-    width: 100px;
-    margin: 100px;
+    width: 200px;
 }
 .check {
     display: flex;
@@ -414,12 +455,20 @@ h1 {
 }
 .total {
     display: flex;
+    padding: 2% 0;
+    justify-content: end;
 }
-.total p{
-    padding-top: 10px;
-    font-weight: 400;
-    width: 100%;
-    text-align: end;
+.total h3{
+    padding-left: 3%;
+}
+.total input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000;
+    width: 150px;
+    font-size: 16px;
 }
 
 

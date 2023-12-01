@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="hand.svg" type="image/svg">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -51,24 +52,20 @@
 
     <main>
         <article id="zakaz">
-            <div class="shop">
-                <h2>Shopping Cart</h2>
-            </div>
+            <h2 class="shop">Shopping Cart</h2>
             <div class="shopping-cart">
 
                 <div class="column-labels">
-                    <label class="product-image">Image</label>
-                    <label class="product-details">Product</label>
-                    <label class="product-price">Price</label>
-                    <label class="product-quantity">Quantity</label>
-                    <label class="product-removal">Size</label>
+                    <label class="name-product-image">Image</label>
+                    <label class="name-product-details">Product</label>
+                    <label class="name-product-price">Price</label>
+                    <label class="name-product-quantity">Quantity</label>
                 </div>
-                <div class="productsss">
                     <div class="product">
-                        <img class="sale" src="28f4984f5e1516410e71df6474b97b6b.jpg">
-                        <div class="proddisc">T-ssshhhiiittt! 2.0</div>
-                        <div class="prodprice">1000p</div>
-                        <input type="number" value="1" min="0" class="quant">
+                        <img class="product-image" src="28f4984f5e1516410e71df6474b97b6b.jpg">
+                        <div class="product-details">T-ssshhhiiittt! 2.0</div>
+                        <div class="product-price">1000p</div>
+                        <!-- <input type="number" value="1" min="0" class="product-quantity">
                         <div class="checkbox">
                             <div class="check">
                                 <p>S</p>
@@ -82,52 +79,118 @@
                                 <p>L</p>
                                 <input type="checkbox" class="check">
                             </div>
+                        </div> -->
+                        <div class="quant+size">
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>S</h3>
+                            </div>
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>M</h3>
+                            </div>
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>L</h3>
+                            </div>
                         </div>
                     </div>
                     <div class="product">
-                        <img class="sale" src="5Xhus_UHSZM.jpg">
-                        <div class="proddisc">T-ssshhhiiittt! pink</div>
-                        <div class="prodprice">1000p</div>
-                        <input type="number" value="0" min="0" class="quant">
-                        <div class="checkbox">
-                            <div class="check">
-                                <p>S</p>
-                                <input type="checkbox" class="check">
+                        <img class="product-image" src="5Xhus_UHSZM.jpg">
+                        <div class="product-details">T-ssshhhiiittt! pink</div>
+                        <div class="product-price">1000p</div>
+                        <div class="quant+size">
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>S</h3>
                             </div>
-                            <div class="check">
-                                <p>M</p>
-                                <input type="checkbox" class="check">
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>M</h3>
                             </div>
-                            <div class="check">
-                                <p>L</p>
-                                <input type="checkbox" class="check">
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>L</h3>
                             </div>
                         </div>
                     </div>
                     <div class="product">
-                        <img class="sale" src="VipjxTKepAw.jpg">
-                        <div class="proddisc">тишка "середина грустных лет"</div>
-                        <div class="prodprice">1200p</div>
-                        <input type="number" value="0" min="0" class="quant">
-                        <div class="checkbox">
-                            <div class="check">
-                                <p>S</p>
-                                <input type="checkbox" class="check">
+                        <img class="product-image" src="VipjxTKepAw.jpg">
+                        <div class="product-details">тишка "середина грустных лет"</div>
+                        <div class="product-price">1200p</div>
+                        <div class="quant+size">
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>S</h3>
                             </div>
-                            <div class="check">
-                                <p>M</p>
-                                <input type="checkbox" class="check">
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>M</h3>
                             </div>
-                            <div class="check">
-                                <p>L</p>
-                                <input type="checkbox" class="check">
+                            <div class="quantity">
+                                <button class="plus-btn" type="button" name="button">
+                                    <p>+</p>
+                                </button>
+                                <input type="text" name="name" value="0" readonly>
+                                <button class="minus-btn" type="button" name="button">
+                                    <p>-</p>
+                                </button>
+                                <h3>L</h3>
                             </div>
                         </div>
                     </div>
-                </div>
+                
                 <div class="total">
                     <h3>Total:</h3>
-                    <p>1000p</p>
+                    <input class="total-price" type="text" name="name" value="0" readonly>
                 </div>
             </div>
         </article>
@@ -159,6 +222,8 @@
         </div>
         <p class="podpis">Сайт разработал Логинов А. М.</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
