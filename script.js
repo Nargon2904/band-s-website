@@ -11,6 +11,25 @@ form.onsubmit = function(evt) {
 };
 
 
+
+/*для подсчета суммы, не работает
+
+let totp = document.querySelector('.total-price');
+let price = 0;
+
+let a = document.getElementById('1 tish').innerHTML; // нужно будет брать по id
+let b = document.getElementById('2 tish').innerHTML;  // нужно будет брать по id
+let c = document.getElementById('3 tish').innerHTML; // нужно будет брать по id
+a = parseInt(a.slice(0, -1));
+b = parseInt(b.slice(0, -1));
+c = parseInt(c.slice(0, -1));
+
+function myFunc(a, b, c) {
+  price = a + b + c;
+  totp.setAttribute("value", price);
+}
+*/
+
 $('.minus-btn').on('click', function(e) {
   e.preventDefault();
   var $this = $(this);
@@ -24,7 +43,6 @@ $('.minus-btn').on('click', function(e) {
   }
 
   $input.val(value);
-
 });
 
 $('.plus-btn').on('click', function(e) {
@@ -33,18 +51,20 @@ $('.plus-btn').on('click', function(e) {
   var $input = $this.closest('div').find('input');
   var value = parseInt($input.val());
 
-  if (value < 100) {
+  if (value < 8) {
     value = value + 1;
   } else {
-    value =100;
+    value =8;
   }
 
   $input.val(value);
 });
 
 
-/*let minus = document.querySelector('.minus-btn');//проблема в селекторе, он берет первый элемент
-let plus = document.querySelector('.plus-btn');
+/*var minus = document.querySelectorAll('.minus-btn'), i;//проблема в селекторе
+var plus = document.querySelectorAll('.plus-btn'), j;
+
+//var divs = document.querySelectorAll('div'), i;
 
 minus.onclick = function(evt) {
   evt.preventDefault();
@@ -72,12 +92,5 @@ plus.onclick = function(evt) {
   }
 
   inp.setAttribute("value", value);
-};*/
-
-
-let totp = document.querySelector('.total-price');
-let price = 0;
-
-let a = document.querySelector('.product-price').innerHTML; // нужно будет брать по id
-alert(a);
-totp.setAttribute("value", price);
+};
+*/
