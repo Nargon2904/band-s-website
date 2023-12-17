@@ -38,9 +38,6 @@ nav {
     transition: 0.3s ease;
 }
 
-.mainheader2 .navblock {
-    font-weight: 600;
-}
 .navblock:hover {
     border-bottom: 2px solid #ffffff;
     padding: 6px 20px;
@@ -252,7 +249,8 @@ h1 {
     
 }
 .mainheader2 .navblock {
-    color: black;
+    font-weight: 600;
+    color: #000;
 }
 .mainheader2 .navblock:hover {
     border-bottom: 2px solid #000;
